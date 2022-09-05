@@ -163,7 +163,7 @@ export default function App() {
           <Route path="/teamamphoe" element={<TeamRDUAmphoe />} />
           <Route path="/teamprovince" element={<TeamRDUProvince />} />
 
-          <Route path="/" element={<Navigate to="/login" />} />
+          <Route path="/" element={<Navigate to="/home" />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Main>

@@ -31,3 +31,6 @@ npx crcf -f --notest --typescript AdminRegisterPage CoordRegisterPage
 cd src/components/layouts
 npx crcf -f --notest --typescript Header Menu
 
+# Homepage Components
+npx crcf -f --notest --typescript SummaryCard RDUProvinceChart RDUProvinceMap RDUProvinceList
+npx crcf -f --notest --typescript RDUCountryInfo
