@@ -38,6 +38,8 @@ import TeamRDUProvince from "./components/pages/TeamRDUProvince";
 import ChangwatProfile from "./components/pages/ChangwatProfile";
 import RDUProvincePlan from "./components/pages/RDUProvincePlan";
 import CoordDashboardPage from "./components/pages/CoordDashboardPage";
+import DrugServicePage from "./components/pages/DrugServicePage";
+import ThaiRDUServicePage from "./components/pages/ThaiRDUServicePage";
 
 
 
@@ -155,6 +157,8 @@ export default function App() {
           <Route path="/coorddashboard" element={<CoordDashboardPage />} />
           <Route path="/admindashboard" element={<AdminDashboardPage />} />
           <Route path="/sadmindashboard" element={<SuperadminDashboardPage />} />
+          <Route path="/drugservice" element={<DrugServicePage/>}/>
+          <Route path="/thairdu" element={<ThaiRDUServicePage/>}/>
           <Route path="/aboutus" element={<AboutUs />} />
           <Route path="/chwprofile" element={<ChangwatProfile />} />
           <Route path="/rdupvplan" element={<RDUProvincePlan />} />

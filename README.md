@@ -26,11 +26,14 @@ npx crcf -f --notest --typescript LoginPage RegisterPage AboutUs
 npx crcf -f --notest --typescript HomePage UserDashboardPage CoordDashboardPage AdminDashboardPage SuperadminDashboardPage
 npx crcf -f --notest --typescript ChangwatProfile TargetAmphoe TargetGroceries TeamRDUProvince TeamRDUAmphoe RDUProvincePlan
 npx crcf -f --notest --typescript AdminRegisterPage CoordRegisterPage
+npx crcf -f --notest --typescript DrugServicePage
+npx crcf -f --notest --typescript ThaiRDUServicePage
 
 # In Layouts
 cd src/components/layouts
 npx crcf -f --notest --typescript Header Menu
 
 # Homepage Components
+cd src/compopents/homepage
 npx crcf -f --notest --typescript SummaryCard RDUProvinceChart RDUProvinceMap RDUProvinceList
 npx crcf -f --notest --typescript RDUCountryInfo
