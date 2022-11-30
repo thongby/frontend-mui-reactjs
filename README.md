@@ -37,3 +37,15 @@ npx crcf -f --notest --typescript Header Menu
 cd src/compopents/homepage
 npx crcf -f --notest --typescript SummaryCard RDUProvinceChart RDUProvinceMap RDUProvinceList
 npx crcf -f --notest --typescript RDUCountryInfo
+npx crcf -f --notest --typescript PrivateHospitalChart DrugStoreGPPChart
+npx crcf -f --notest --typescript HPVCInfoChart TAWAIChart
+npx crcf -f --notest --typescript RDUHospitalChart RDUPCUChart
+
+# Drug Service Components
+cd src/components/drugservice
+npx crcf -f --notest --typescript DispensingAndDrugValueOPDHospital AdmitAndDrugValueIPDHospital
+npx crcf -f --notest --typescript DispensingAndDrugValuePCU
+npx crcf -f --notest --typescript Top100DrugDispensing
+
+
+

@@ -155,6 +155,25 @@ export default function Menu({ open, onDrawerClose }: MenuProp) {
           <ListItemText primary="ร้านชำเป้าหมาย" />
         </ListItem>
         <Divider />
+        <ListItem button to="/coorddashboard" component={MyNavLink} activeClassName="Mui-selected" exact>
+          <ListItemIcon>
+            <BarChart />
+          </ListItemIcon>
+          <ListItemText primary="ผู้ประสานงานจังหวัด" />
+        </ListItem>
+        <ListItem button to="/admindashboard" component={MyNavLink} activeClassName="Mui-selected" exact>
+          <ListItemIcon>
+            <BarChart />
+          </ListItemIcon>
+          <ListItemText primary="ผู้ประสานงานกระทรวง" />
+        </ListItem>
+        <ListItem button to="/sadmindashboard" component={MyNavLink} activeClassName="Mui-selected" exact>
+          <ListItemIcon>
+            <BarChart />
+          </ListItemIcon>
+          <ListItemText primary="ผู้จัดการระบบ" />
+        </ListItem>
+        <Divider />
         <ListItem button to="/thairdu" component={MyNavLink} activeClassName="Mui-selected" exact>
           <ListItemIcon>
             <Person />
