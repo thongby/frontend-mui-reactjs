@@ -133,26 +133,26 @@ export default function Menu({ open, onDrawerClose }: MenuProp) {
           <ListItemIcon>
             <MedicationIcon />
           </ListItemIcon>
-          <ListItemText primary="การเข้าถึงบริการยา" />
+          <ListItemText primary="สถิติบริการด้านยา" />
         </ListItem>
         <Divider />
         <ListItem button to="/chwprofile" component={MyNavLink} activeClassName="Mui-selected" exact>
           <ListItemIcon>
             <HomeIcon />
           </ListItemIcon>
-          <ListItemText primary="ข้อมูลจังหวัด" />
+          <ListItemText primary="ข้อมูลพื้นฐานจังหวัด" />
         </ListItem>
         <ListItem button to="/tamphoe" component={MyNavLink} activeClassName="Mui-selected" exact>
           <ListItemIcon>
             <Layers />
           </ListItemIcon>
-          <ListItemText primary="อำเภอเป้าหมาย" />
+          <ListItemText primary="อำเภอ RDU" />
         </ListItem>
         <ListItem button to="/groceries" component={MyNavLink} activeClassName="Mui-selected" exact>
           <ListItemIcon>
             <BarChart />
           </ListItemIcon>
-          <ListItemText primary="ร้านชำเป้าหมาย" />
+          <ListItemText primary="ร้านชำ RDU" />
         </ListItem>
         <Divider />
         <ListItem button to="/coorddashboard" component={MyNavLink} activeClassName="Mui-selected" exact>
@@ -178,7 +178,7 @@ export default function Menu({ open, onDrawerClose }: MenuProp) {
           <ListItemIcon>
             <Person />
           </ListItemIcon>
-          <ListItemText primary="ThaiRDU Services" />
+          <ListItemText primary="ThaiRDU" />
         </ListItem>
         <ListItem button to="/aboutus" component={MyNavLink} activeClassName="Mui-selected" exact>
           <ListItemIcon>

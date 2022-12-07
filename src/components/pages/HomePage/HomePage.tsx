@@ -27,6 +27,8 @@ const HomePage: React.FC<any> = () => {
       <br/>
       <div><RDUProvinceMap/></div>
       <br/>
+      <h2>จังหวัดที่มีการใช้ยาอย่างสมเหตุผล</h2>
+      <br />
       <div><RDUProvinceList/></div>
       <br/>
       <div><RDUHospitalChart/></div>
@@ -41,6 +43,8 @@ const HomePage: React.FC<any> = () => {
       <br/>
       <div><TAWAIChart/></div>
       <br/>
+      <h2>แนวทางการพัฒนาประเทศใช้ยาอย่างสมเหตุผล</h2>
+      <br />
       <div><RDUCountryInfo/></div>
     </> 
   );
