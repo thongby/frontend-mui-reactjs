@@ -21,6 +21,10 @@ yarn add @emotion/react @emotion/styled @mui/icons-material @mui/material @mui/x
 yarn add chart.js react-chartjs-2 @react-hook/debounce react-router-dom @types/react-router-dom
 yarn add axios formik formik-material-ui moment react-moment url-join react-number-format
 yarn add @types/redux-logger react-redux redux redux-logger redux-thunk url-join @types/url-join react-iframe
+yarn add leaflet react-leaflet
+yarn add -D @types/leaflet
+
+yarn add react-apexcharts apexcharts
 
 # Page Components
 
@@ -33,6 +37,13 @@ npx crcf -f --notest --typescript ChangwatProfile TargetAmphoe TargetGroceries T
 npx crcf -f --notest --typescript AdminRegisterPage CoordRegisterPage
 npx crcf -f --notest --typescript DrugServicePage
 npx crcf -f --notest --typescript ThaiRDUServicePage
+
+// In Charts
+cd src/components/charts
+npx crcf -f --notest --typescript RDUHospitalIndyChart RDUPCUIndyChart RDUPrivateHosPassChart
+npx crcf -f --notest --typescript RDUDrugstorePassChart RDUHPVCDataChart RDUTAWAIInfoChart
+npx crcf -f --notest --typescript RDUProvincePassChart RDUAmphoePassChart RDUGroceriesPassChart
+
 
 # In Layouts
 
@@ -59,3 +70,7 @@ npx crcf -f --notest --typescript Top100DrugDispensing
 
 cd src/components/thairdu
 npx crcf -f --notest --typescript ThaiRDUDownload ThaiRDUFeature ThaiRDUQA
+
+# Start project
+
+yarn start

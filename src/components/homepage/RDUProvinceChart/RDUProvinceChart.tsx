@@ -17,6 +17,9 @@ import CardContent from "@mui/material/CardContent";
 //import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
+import RDUAmphoePassChart from "../../charts/RDUAmphoePassChart";
+import RDUProvincePassChart from "../../charts/RDUProvincePassChart";
+import RDUGroceriesPassChart from "../../charts/RDUGroceriesPassChart";
 
 export default function RDUProvinceChart() {
   return (
@@ -28,6 +31,7 @@ export default function RDUProvinceChart() {
               <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
                 กราฟแสดงจำนวนจังหวัดผ่านเกณฑ์
               </Typography>
+              <RDUProvincePassChart />
             </CardContent>
           </Card>
         </Grid>
@@ -37,6 +41,7 @@ export default function RDUProvinceChart() {
               <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
                 กราฟแสดงจำนวนอำเภอผ่านเกณฑ์
               </Typography>
+              <RDUAmphoePassChart />
             </CardContent>
           </Card>
         </Grid>
@@ -46,6 +51,7 @@ export default function RDUProvinceChart() {
               <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
                 กราฟแสดงจำนวนร้านชำคุณภาพผ่านเกณฑ์
               </Typography>
+              <RDUGroceriesPassChart />
             </CardContent>
           </Card>
         </Grid>

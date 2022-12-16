@@ -19,17 +19,21 @@
     "@types/react-router-dom": "^5.3.3",
     "@types/redux-logger": "^3.0.9",
     "@types/url-join": "^4.0.1",
+    "apexcharts": "^3.36.3",
     "axios": "^0.27.2",
     "chart.js": "^3.8.0",
     "create-react-component-folder": "^0.3.7",
     "formik": "^2.2.9",
     "formik-material-ui": "^4.0.0-alpha.2",
     "global": "^4.4.0",
+    "leaflet": "^1.9.3",
     "moment": "^2.29.3",
     "react": "^18.1.0",
+    "react-apexcharts": "^1.4.0",
     "react-chartjs-2": "^4.2.0",
     "react-dom": "^18.1.0",
     "react-iframe": "^1.8.0",
+    "react-leaflet": "^4.2.0",
     "react-moment": "^1.1.2",
     "react-number-format": "^4.9.3",
     "react-redux": "^8.0.2",
@@ -65,5 +69,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/leaflet": "^1.9.0"
   }
 }
