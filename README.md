@@ -43,7 +43,8 @@ cd src/components/charts
 npx crcf -f --notest --typescript RDUHospitalIndyChart RDUPCUIndyChart RDUPrivateHosPassChart
 npx crcf -f --notest --typescript RDUDrugstorePassChart RDUHPVCDataChart RDUTAWAIInfoChart
 npx crcf -f --notest --typescript RDUProvincePassChart RDUAmphoePassChart RDUGroceriesPassChart
-
+npx crcf -f --notest --typescript DispensingAndDrugValuePCUChart Top100DrugDispensingChart
+npx crcf -f --notest --typescript DispensingAndDrugValueOPDHospitalChart AdmitAndDrugValueIPDHospitalChart
 
 # In Layouts
 
@@ -70,6 +71,11 @@ npx crcf -f --notest --typescript Top100DrugDispensing
 
 cd src/components/thairdu
 npx crcf -f --notest --typescript ThaiRDUDownload ThaiRDUFeature ThaiRDUQA
+
+# AboutUs
+
+cd src/components/aboutus
+npx crcf -f --notest --typescript AboutUsSection
 
 # Start project
 

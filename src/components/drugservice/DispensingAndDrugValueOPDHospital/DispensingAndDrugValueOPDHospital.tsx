@@ -3,6 +3,7 @@ import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
+import DispensingAndDrugValueOPDHospitalChart from '../../charts/DispensingAndDrugValueOPDHospitalChart';
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -18,6 +19,7 @@ export default function DispensingAndDrugValueOPDHospital() {
       <Grid container spacing={2}>
         <Grid item xs={12}>
           <Item>กราฟแสดงข้อมูลจำนวนใบสั่งยาและมูลค่ายาผู้ป่วยนอกขแงโรงพยาบาล</Item>
+          <DispensingAndDrugValueOPDHospitalChart/>
         </Grid>
       </Grid>
     </Box>

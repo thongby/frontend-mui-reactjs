@@ -11,7 +11,7 @@ type DrugServicePageProps = {
 const DrugServicePage: React.FC<any> = () => {
   return (
     <>
-    <div>การเข้าถึงบริการยา</div>
+    <div>สถิติบริการด้านยา</div>
     <br/>
     <div><DispensingAndDrugValueOPDHospital/></div>
     <br/>

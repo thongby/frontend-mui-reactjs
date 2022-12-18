@@ -12,6 +12,8 @@ const ThaiRDUServicePage: React.FC<any> = () => {
     <>
       <div>ThaiRDUServicePage</div>
       <br/>
+      <ThaiRDUDownload/>
+      <br/>
       <ThaiRDUFeature/>
       <br />
       <ThaiRDUDownload/>

@@ -1,15 +1,3 @@
-/* import * as React from "react";
-
-type RDUProvinceListProps = {
-  //
-};
-
-const RDUProvinceList: React.FC<any> = () => {
-  return <div>RDUProvinceList</div>;
-};
-
-export default RDUProvinceList; */
-
 import * as React from 'react';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
@@ -44,10 +32,10 @@ export default function RDUProvinceList() {
         <TableHead>
           <TableRow>
             <TableCell>จังหวัด</TableCell>
-            <TableCell align="right">โรงพยาบาล</TableCell>
-            <TableCell align="right">รพ.สต.</TableCell>
-            <TableCell align="right">ร้านชำ</TableCell>
-            <TableCell align="right">สรุปผล</TableCell>
+            <TableCell align="right">ตัวชี้วัดโรงพยาบาล</TableCell>
+            <TableCell align="right">ตัวชี้วัดรพ.สต.</TableCell>
+            <TableCell align="right">ตัวชี้วัดร้านชำ</TableCell>
+            <TableCell align="right">จังหวัดRDU</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
