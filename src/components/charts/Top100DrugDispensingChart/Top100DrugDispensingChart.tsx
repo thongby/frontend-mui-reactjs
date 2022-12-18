@@ -8,29 +8,80 @@ type Top100DrugDispensingChartProps = {
 
 const Top100DrugDispensingChart: React.FC<any> = () => {
   const options: ApexOptions = {
+    legend: {
+      show: false
+    },
     chart: {
       height: 350,
-      type: "line",
-      zoom: {
-        enabled: true,
-      },
+      type: 'treemap'
     },
+    title: {
+      text: '100 อันดับยาที่มีมูลค่าการใช้มากสุด'
+    }
   };
 
   const series = [
     {
-      name: "All Tasks",
-      data: [31, 40, 28, 51, 42, 109, 100],
-    },
-    {
-      name: "My Tasks",
-      data: [11, 32, 45, 32, 34, 52, 41],
-    },
+      data: [
+        {
+          x: 'Drug A',
+          y: 218
+        },
+        {
+          x: 'Drug B',
+          y: 149
+        },
+        {
+          x: 'Drug C',
+          y: 184
+        },
+        {
+          x: 'Drug D',
+          y: 55
+        },
+        {
+          x: 'Drug E',
+          y: 84
+        },
+        {
+          x: 'Drug F',
+          y: 31
+        },
+        {
+          x: 'Drug G',
+          y: 70
+        },
+        {
+          x: 'JaipurDrug H',
+          y: 30
+        },
+        {
+          x: 'Drug I',
+          y: 44
+        },
+        {
+          x: 'Drug J',
+          y: 68
+        },
+        {
+          x: 'Drug K',
+          y: 28
+        },
+        {
+          x: 'Drug L',
+          y: 19
+        },
+        {
+          x: 'Drug M',
+          y: 29
+        }
+      ]
+    }
   ];
 
   return (
     <>
-      <ReactApexChart options={options} series={series} type="line" height={350} width={800} />
+      <ReactApexChart options={options} series={series} type="treemap" height={350} />
     </>
   );
 };

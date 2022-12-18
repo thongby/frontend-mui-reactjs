@@ -18,18 +18,18 @@ const RDUTAWAIInfoChart: React.FC<any> = () => {
 
   const series = [
     {
-      name: "All Tasks",
+      name: "ผลิตภัณฑ์",
       data: [31, 40, 28, 51, 42, 109, 100],
     },
     {
-      name: "My Tasks",
+      name: "สถานที่เสี่ยง",
       data: [11, 32, 45, 32, 34, 52, 41],
     },
   ];
 
   return (
     <>
-      <ReactApexChart options={options} series={series} type="line" height={350} width={800} />
+      <ReactApexChart options={options} series={series} type="line" height={350}/>
     </>
   );
 };
