@@ -1,4 +1,6 @@
 import * as React from "react";
+import RDUProvinceChart from "../../homepage/RDUProvinceChart";
+import SummaryCard from "../../homepage/SummaryCard";
 import ChangwatProfile from "../ChangwatProfile";
 import TargetAmphoe from "../TargetAmphoe";
 import TargetGroceries from "../TargetGroceries";
@@ -12,7 +14,9 @@ type AdminDashboardPageProps = {
 const AdminDashboardPage: React.FC<any> = () => {
   return (
     <>
-      <div>AdminDashboardPage</div>
+      <SummaryCard />
+      <br />
+      <RDUProvinceChart />
       <br />
       <h2>ข้อมูลจังหวัด</h2>
       <ChangwatProfile />

@@ -17,6 +17,7 @@ import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import InboxIcon from "@mui/icons-material/MoveToInbox";
 import MailIcon from "@mui/icons-material/Mail";
+import FacebookIcon from "@mui/icons-material/Facebook";
 import { Badge } from "@mui/material";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import AccountCircle from "@mui/icons-material/AccountCircle";
@@ -74,12 +75,12 @@ const DrawerHeader = styled("div")(({ theme }) => ({
 }));
 
 //export default function Header() {
-  type HeaderProp = {
-    open: boolean;
-    onDrawerOpen: () => void;
-  };
-  
-  export default function Header({ open, onDrawerOpen }: HeaderProp) {
+type HeaderProp = {
+  open: boolean;
+  onDrawerOpen: () => void;
+};
+
+export default function Header({ open, onDrawerOpen }: HeaderProp) {
   const theme = useTheme();
   const navigate = useNavigate();
 
@@ -105,20 +106,21 @@ const DrawerHeader = styled("div")(({ theme }) => ({
 
         <Box sx={{ flexGrow: 1 }} />
         <Box sx={{ display: { xs: "none", md: "flex" } }}>
-          <IconButton
-            size="large"
-            aria-label="show 4 new mails"
-            color="inherit"
-          >
+          <IconButton size="large" aria-label="show 4 new mails" color="inherit">
             <Badge badgeContent={4} color="error">
               <MailIcon />
             </Badge>
           </IconButton>
           <IconButton
             size="large"
-            aria-label="show 17 new notifications"
             color="inherit"
+            onClick={() => window.open("https://www.facebook.com/groups/472400396553470")}
           >
+            <Badge color="error">
+              <FacebookIcon />
+            </Badge>
+          </IconButton>
+          <IconButton size="large" aria-label="show 17 new notifications" color="inherit">
             <Badge badgeContent={17} color="error">
               <NotificationsIcon />
             </Badge>
@@ -130,7 +132,7 @@ const DrawerHeader = styled("div")(({ theme }) => ({
             aria-haspopup="true"
             onClick={() => {
               alert("Logout");
-              navigate("/login")
+              navigate("/login");
             }}
             color="inherit"
           >
