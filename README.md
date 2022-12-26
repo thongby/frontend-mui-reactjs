@@ -62,6 +62,11 @@ npx crcf -f --notest --typescript HPVCInfoChart TAWAIChart
 npx crcf -f --notest --typescript RDUHospitalChart RDUPCUChart
 npx crcf -f --notest --typescript PrivateClinicChart
 
+# CoordDashboardPage
+cd src/components/coorddashboard
+npx crcf -f --notest --typescript CoordSummaryCard
+
+
 # Drug Service Components
 
 cd src/components/drugservice
@@ -80,5 +85,4 @@ cd src/components/aboutus
 npx crcf -f --notest --typescript AboutUsSection
 
 # Start project
-
 yarn start

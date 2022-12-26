@@ -41,9 +41,6 @@ const rows = [
 export default function TargetAmphoe() {
   return (
     <>
-    <RDUProvinceMap/>
-    <br/>
-    <h2>อำเภอเป้าหมาย</h2>
     <TableContainer component={Paper}>
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
         <TableHead>

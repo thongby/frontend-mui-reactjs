@@ -23,13 +23,11 @@ const rows = [
 export default function TargetGroceries() {
   return (
     <>
-      <RDUProvinceMap />
-      <br />
       <TableContainer component={Paper}>
         <Table sx={{ minWidth: 650 }} aria-label="simple table">
           <TableHead>
             <TableRow>
-              <TableCell>ร้านชำ RDU</TableCell>
+              <TableCell>สถานที่</TableCell>
               <TableCell align="right">ที่อยู่</TableCell>
               <TableCell align="right">ตำบล</TableCell>
               <TableCell align="right">อำเภอ</TableCell>

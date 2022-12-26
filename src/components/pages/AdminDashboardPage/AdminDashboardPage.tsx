@@ -32,6 +32,21 @@ const AdminDashboardPage: React.FC<any> = () => {
       <br />
       <h2>ผู้ประสานงานอำเภอ</h2>
       <TeamRDUAmphoe />
+      <br/>
+      <h2>โรงพยาบาล</h2>
+      <TargetGroceries/>
+      <br/>
+      <h2>รพ.สต.</h2>
+      <TargetGroceries/>
+      <br/>
+      <h2>โรงพยาบาลเอกชน</h2>
+      <TargetGroceries/>
+      <br/>
+      <h2>คลินิกเอกชน</h2>
+      <TargetGroceries/>
+      <br/>
+      <h2>ร้านขายยา GPP</h2>
+      <TargetGroceries/>
     </>
   );
 };
