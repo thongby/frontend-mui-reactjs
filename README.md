@@ -46,6 +46,8 @@ npx crcf -f --notest --typescript RDUDrugstorePassChart RDUHPVCDataChart RDUTAWA
 npx crcf -f --notest --typescript RDUProvincePassChart RDUAmphoePassChart RDUGroceriesPassChart
 npx crcf -f --notest --typescript DispensingAndDrugValuePCUChart Top100DrugDispensingChart
 npx crcf -f --notest --typescript DispensingAndDrugValueOPDHospitalChart AdmitAndDrugValueIPDHospitalChart
+npx crcf -f --notest --typescript HPVCDrugPer10000AdmissionsByKhetChart
+npx crcf -f --notest --typescript HPVCSeriousAEAvgByKhetChart
 
 # In Layouts
 
@@ -73,6 +75,8 @@ cd src/components/drugservice
 npx crcf -f --notest --typescript DispensingAndDrugValueOPDHospital AdmitAndDrugValueIPDHospital
 npx crcf -f --notest --typescript DispensingAndDrugValuePCU
 npx crcf -f --notest --typescript Top100DrugDispensing
+npx crcf -f --notest --typescript DrugPer1000Admissions
+npx crcf -f --notest --typescript HPVCSeriousAE
 
 # ThaiRDU Components
 

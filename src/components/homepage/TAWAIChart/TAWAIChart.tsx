@@ -18,7 +18,7 @@ export default function TAWAIChart() {
     <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={2}>
         <Grid item xs={12}>
-          <Item>กราฟแสดงข้อมูลจาก TAWAI for Health</Item>
+          <Item>ข้อมูลรายงานจากชุมชนสนับสนุนโดย TAWAI for Health ปีงบประมาณ 2565</Item>
           <RDUTAWAIInfoChart/>
         </Grid>
       </Grid>
