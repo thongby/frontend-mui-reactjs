@@ -26,6 +26,8 @@ yarn add -D @types/leaflet
 
 yarn add react-apexcharts apexcharts
 
+yarn add react-helmet-async
+
 # Page Components
 
 // In Pages
