@@ -28,6 +28,8 @@ yarn add react-apexcharts apexcharts
 
 yarn add react-helmet-async
 
+yarn add framer-motion
+
 # Page Components
 
 // In Pages
