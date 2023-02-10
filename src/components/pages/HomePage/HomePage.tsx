@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Container } from "@mui/material";
 
 import SummaryCard from "../../homepage/SummaryCard";
 import RDUProvinceChart from "../../homepage/RDUProvinceChart";
@@ -13,67 +14,71 @@ import HPVCInfoChart from "../../homepage/HPVCInfoChart";
 import TAWAIChart from "../../homepage/TAWAIChart";
 import PrivateClinicChart from "../../homepage/PrivateClinicChart";
 
+import Page from "../../parts/Page";
+
 type HomePageProps = {
   //
 };
 
 const HomePage: React.FC<any> = () => {
   return (
-    <>
-      <div>การพัฒนาประเทศสู่ประเทศที่มีการใช้ยาอย่างสมเหตุผล</div>
-      <br />
-      <div>
-        <SummaryCard />
-      </div>
-      <br />
-      <div>
-        <RDUProvinceChart />
-      </div>
-      <br />
-      <div>
-        <RDUProvinceMap />
-      </div>
-      <br />
-      <h2>จังหวัดที่มีการใช้ยาอย่างสมเหตุผล</h2>
-      <br />
-      <div>
-        <RDUProvinceList />
-      </div>
-      <br />
-      <div>
-        <RDUHospitalChart />
-      </div>
-      <br />
-      <div>
-        <RDUPCUChart />
-      </div>
-      <br />
-      <div>
-        <PrivateHospitalChart />
-      </div>
-      <br />
-      <div>
-        <PrivateClinicChart />
-      </div>
-      <br />
-      <div>
-        <DrugStoreGPPChart />
-      </div>
-      <br />
-      <div>
-        <HPVCInfoChart />
-      </div>
-      <br />
-      <div>
-        <TAWAIChart />
-      </div>
-      <br />
-      <h2>แนวทางการพัฒนาประเทศใช้ยาอย่างสมเหตุผล</h2>
-      <br />
-      <div>
-        <RDUCountryInfo />
-      </div>
-    </>
+    <Page title="หน้าหลัก">
+      <Container>
+        <div>การพัฒนาประเทศสู่ประเทศที่มีการใช้ยาอย่างสมเหตุผล</div>
+        <br />
+        <div>
+          <SummaryCard />
+        </div>
+        <br />
+        <div>
+          <RDUProvinceChart />
+        </div>
+        <br />
+        <div>
+          <RDUProvinceMap />
+        </div>
+        <br />
+        <h2>จังหวัดที่มีการใช้ยาอย่างสมเหตุผล</h2>
+        <br />
+        <div>
+          <RDUProvinceList />
+        </div>
+        <br />
+        <div>
+          <RDUHospitalChart />
+        </div>
+        <br />
+        <div>
+          <RDUPCUChart />
+        </div>
+        <br />
+        <div>
+          <PrivateHospitalChart />
+        </div>
+        <br />
+        <div>
+          <PrivateClinicChart />
+        </div>
+        <br />
+        <div>
+          <DrugStoreGPPChart />
+        </div>
+        <br />
+        <div>
+          <HPVCInfoChart />
+        </div>
+        <br />
+        <div>
+          <TAWAIChart />
+        </div>
+        <br />
+        <h2>แนวทางการพัฒนาประเทศใช้ยาอย่างสมเหตุผล</h2>
+        <br />
+        <div>
+          <RDUCountryInfo />
+        </div>
+      </Container>
+    </Page>
   );
 };
 
