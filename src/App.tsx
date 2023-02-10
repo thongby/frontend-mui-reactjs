@@ -41,7 +41,7 @@ import CoordDashboardPage from "./components/pages/CoordDashboardPage";
 import DrugServicePage from "./components/pages/DrugServicePage";
 import ThaiRDUServicePage from "./components/pages/ThaiRDUServicePage";
 
-
+import Page404 from "./components/pages/Page404";
 
 const drawerWidth = 240;
 
@@ -69,10 +69,7 @@ const theme = createTheme({
     MuiDrawer: {
       styleOverrides: {
         paper: {
-          backgroundImage:
-            "url(" +
-            `${process.env.PUBLIC_URL}/images/background_menu.jpg` +
-            ")",
+          backgroundImage: "url(" + `${process.env.PUBLIC_URL}/images/background_menu.jpg` + ")",
           width: drawerWidth,
         },
       },
@@ -142,43 +139,44 @@ export default function App() {
   return (
     <ThemeProvider theme={theme}>
       <Box sx={{ display: "flex" }}>
-      <CssBaseline />
-      <Header open={open} onDrawerOpen={handleDrawerOpen} />
-      <Menu open={open} onDrawerClose={handleDrawerClose} />
-      <Main open={open}>
-        <DrawerHeader />
-        <Routes>
-          <Route path="/home" element={<HomePage />} />
-          <Route path="/login" element={<LoginPage />} />
-          <Route path="/register" element={<RegisterPage />} />
-          <Route path="/adminregister" element={<AdminRegisterPage />} />
-          <Route path="/coordregister" element={<CoordRegisterPage />} />
-          <Route path="/userdashboard" element={<UserDashboardPage />} />
-          <Route path="/coorddashboard" element={<CoordDashboardPage />} />
-          <Route path="/admindashboard" element={<AdminDashboardPage />} />
-          <Route path="/sadmindashboard" element={<SuperadminDashboardPage />} />
-          <Route path="/drugservice" element={<DrugServicePage/>}/>
-          <Route path="/thairdu" element={<ThaiRDUServicePage/>}/>
-          <Route path="/aboutus" element={<AboutUs />} />
-          <Route path="/chwprofile" element={<ChangwatProfile />} />
-          <Route path="/rdupvplan" element={<RDUProvincePlan />} />
-          <Route path="/groceries" element={<TargetGroceries />} />
-          <Route path="/tamphoe" element={<TargetAmphoe />} />
-          <Route path="/teamamphoe" element={<TeamRDUAmphoe />} />
-          <Route path="/teamprovince" element={<TeamRDUProvince />} />
+        <CssBaseline />
+        <Header open={open} onDrawerOpen={handleDrawerOpen} />
+        <Menu open={open} onDrawerClose={handleDrawerClose} />
+        <Main open={open}>
+          <DrawerHeader />
+          <Routes>
+            <Route path="/home" element={<HomePage />} />
+            <Route path="/login" element={<LoginPage />} />
+            <Route path="/register" element={<RegisterPage />} />
+            <Route path="/adminregister" element={<AdminRegisterPage />} />
+            <Route path="/coordregister" element={<CoordRegisterPage />} />
+            <Route path="/userdashboard" element={<UserDashboardPage />} />
+            <Route path="/coorddashboard" element={<CoordDashboardPage />} />
+            <Route path="/admindashboard" element={<AdminDashboardPage />} />
+            <Route path="/sadmindashboard" element={<SuperadminDashboardPage />} />
+            <Route path="/drugservice" element={<DrugServicePage />} />
+            <Route path="/thairdu" element={<ThaiRDUServicePage />} />
+            <Route path="/aboutus" element={<AboutUs />} />
+            <Route path="/chwprofile" element={<ChangwatProfile />} />
+            <Route path="/rdupvplan" element={<RDUProvincePlan />} />
+            <Route path="/groceries" element={<TargetGroceries />} />
+            <Route path="/tamphoe" element={<TargetAmphoe />} />
+            <Route path="/teamamphoe" element={<TeamRDUAmphoe />} />
+            <Route path="/teamprovince" element={<TeamRDUProvince />} />
 
-          <Route path="/" element={<Navigate to="/home" />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </Main>
-    </Box>
-    </ThemeProvider>   
+            <Route path="/" element={<Navigate to="/home" />} />
+            {/* <Route path="*" element={<NotFound />} /> */}
+            <Route path="*" element={<Page404 />} />
+          </Routes>
+        </Main>
+      </Box>
+    </ThemeProvider>
   );
 }
 
-const NotFound = () => (
+/* const NotFound = () => (
   <div>
     <h1>404 - Not Found!</h1>
     <Link to="/">Go Home</Link>
   </div>
-);
+); */

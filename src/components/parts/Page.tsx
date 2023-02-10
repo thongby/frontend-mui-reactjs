@@ -1,12 +1,25 @@
-//import from 'react-helmet-async'
-import React from 'react'
+import { Helmet } from "react-helmet-async";
+import { forwardRef, ReactNode } from "react";
 
-type Props = {}
+import { Box, BoxProps } from "@mui/material";
 
-const Page = (props: Props) => {
-  return (
-    <div>Page</div>
-  )
+interface Props extends BoxProps {
+  children: ReactNode;
+  meta?: ReactNode;
+  title: string;
 }
 
-export default Page
+const Page = forwardRef<HTMLDivElement, Props>(({ children, title = "", meta, ...other }, ref) => (
+  <>
+    <Helmet>
+      <title>{`${title} | RDU Country Info`}</title>
+      {meta}
+    </Helmet>
+
+    <Box ref={ref} {...other}>
+      {children}
+    </Box>
+  </>
+));
+
+export default Page;

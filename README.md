@@ -42,6 +42,8 @@ npx crcf -f --notest --typescript AdminRegisterPage CoordRegisterPage
 npx crcf -f --notest --typescript DrugServicePage
 npx crcf -f --notest --typescript ThaiRDUServicePage
 
+npx crcf -f --notest --typescript Page404
+
 // In Charts
 cd src/components/charts
 npx crcf -f --notest --typescript RDUHospitalIndyChart RDUPCUIndyChart RDUPrivateHosPassChart
@@ -69,9 +71,9 @@ npx crcf -f --notest --typescript RDUHospitalChart RDUPCUChart
 npx crcf -f --notest --typescript PrivateClinicChart
 
 # CoordDashboardPage
+
 cd src/components/coorddashboard
 npx crcf -f --notest --typescript CoordSummaryCard
-
 
 # Drug Service Components
 
@@ -93,4 +95,5 @@ cd src/components/aboutus
 npx crcf -f --notest --typescript AboutUsSection
 
 # Start project
+
 yarn start
